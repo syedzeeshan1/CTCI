@@ -38,6 +38,13 @@ class LinkedList:
         values = [str(x) for x in self]
         return " -> ".join(values)
     
+    def __len__(self):
+        num = 0
+        for x in self:
+            num+= 1
+        return num
+        
+    
     @classmethod
     def generate(cls, k, min_value, max_value):
         return cls(random.choices(range(min_value, max_value), k=k))

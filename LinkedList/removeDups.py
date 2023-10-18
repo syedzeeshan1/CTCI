@@ -13,7 +13,6 @@ def removeDuplicates(linkedList):
             
         curr = curr.next
     linkedList.tail = previous
-    
     print(linkedList)
     
 def removeDuplicatesBetter(linkedList):
@@ -41,4 +40,7 @@ if __name__ == "__main__":
     print(linkedList)
     print("-----------")
     removeDuplicates(linkedList)
+    linkedList = LinkedList.generate(100, 0, 9)
+    print("linkedlist initial = ")
+    print(linkedList)
     removeDuplicatesBetter(linkedList)
