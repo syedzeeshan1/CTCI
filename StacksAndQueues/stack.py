@@ -32,7 +32,7 @@ class Stack:
         return self.top.data
     
     def isEmpty(self):
-        return self.top == None
+        return self.top.data == None
     
     def add_multiple(self, values):
         for x in values:
